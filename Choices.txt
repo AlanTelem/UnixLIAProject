@@ -1,0 +1,7 @@
+Machine choice
+
+Karim and I had a low budget to work with so with that as our main consideration, we chose to use resources that were available to us already. In that respect, rather than opting for a VPS or raspberry pi or Arduino, we chose to use an older machine that was not in use. The machine was one of the models available  through OPEQ and is a low-spec hardware option.
+
+Container software choice
+
+Our main choices for software that would support containers were Proxmox VE and Docker. We chose Proxmox VE on that basis that it is better suited for containers hosting entire distributions. Docker is a good solution for quick deployment on a per-application basis. Our project required something more long-term and that could accommodate students adding programs for each OS as they see fit. 
