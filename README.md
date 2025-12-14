@@ -1,17 +1,16 @@
 # VANIER CST STUDENT’S STARTER PACK
-Vanier CST Student's Starter Pack is a HomeLab that uses Proxmox containers to run many different Linux-based OS’s used within Vanier’s CST program.
-<br><br>
-It allows students to access different OS’s from the Proxmox interface available on the browser.
+
 
 ## Project Overview
-This project is a **HomeLab** built using **Proxmox VE** that allows students in Vanier’s CST program to access multiple Linux-based operating systems through a web browser.
-
-The system provides a safe and centralized environment where students can experiment, practice, and complete coursework without needing multiple SSDs or multiple physical computers.
+Vanier CST Student's Starter Pack is a HomeLab that uses Proxmox containers to run many different Linux-based OS’s used within Vanier’s CST program.
+<br><br>
+It allows students to access different OS’s from the Proxmox interface available on the browser without needing multiple SSDs or multiple physical computers.
 
 ## Motivation (What inspired this Project)
-CST students often require access to several Linux distributions, which can be difficult due to:
+CST students at Vanier College often require access to many different Linux distributions, which can be a lot due to:
 - Limited Storage
-- Inability to Dual-Boot
+- Expensive Hard drives
+- Inability to Dual-Boot (Lab Computers with Administrative Restrictions)
 - Lack of multiple machines
 
 This project solves those issues by offering a single platform where multiple operating systems can be accessed and managed easily through the browser.
