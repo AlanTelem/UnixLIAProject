@@ -1,1 +1,22 @@
+To start, you will need a machine to run the project from and a USB drive for the installation.
 
+1) Your USB drive should be one you can dedicate to storing ISOs. You will be using Ventoy. 
+https://www.ventoy.net/en/index.html
+This website hosts the download link for the program and the steps to use it. Your steps will differ if you are starting setting up the drive from Windows or Linux. I set up mine from a Debian 13 OS so the steps below will reflect what we did. Once you've downloaded the program you will:
+  a)Open the Disks program and take note of the disks that are already there.
+  b)Insert your USB drive into your machine and compare which disk represents the USB.
+  c)Open a command shell and use "cd [Ventoy2Disk.sh location]" to change the directory to that of the ventoy script. Note that [Ventoy2Disk.sh location] is not literal.
+  d)In a command shell, you will run the command: "sh Ventoy2Disk.sh { -i | -I | -u } /dev/XXX". The option I used was -i which is the default installation option. /dev/XXX must be replaced by the file name from step b.
+2) Download the image file for Proxmox VE here: https://www.proxmox.com/en/downloads
+3) Copy or move the image file onto the partition created by Ventoy.
+4) Make sure your USB is plugged into the machine on which the virtual environment will be installed
+5) With the USB plugged in, enter the BIOS/UEFI of the machine. You may need to turn your machine on and off (do not use the restart option on windows 11, as it will not actually power the machine off and on).
+6) In your BIOS/UEFI, select the drive with Ventoy to boot from.
+7) Once you have booted from Ventoy, select the Proxmox VE installation image.
+8) Follow the guided installation process of Proxmox.
+9) Ensure your machine can access the network from which you will logging in remotely. Use an ethernet cable connection. 
+10) With Proxmox now installed, you will need to leave the machine on while you access it remotely from the same network.
+11) Log in through the remote access GUI available via the link that was chosen during installation.
+12) Once you've accessed the virtual environment, you will be need to install the templates before you can create the containers.
+13) Download the images for centOS, Ubuntu and Debian.
+14) Use the "create CT" button on the top right to create the containers for each OS.
